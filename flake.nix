@@ -23,9 +23,6 @@
           f {
             pkgs = import nixpkgs {
               inherit system;
-              overlays = [
-                #            inputs.neovim-nightly-overlay.overlays.default
-              ];
             };
           }
         );
@@ -80,23 +77,25 @@
                 with pkgs.vimPlugins;
                 [
                   lunavim
-                  nvim-treesitter.withAllGrammars
-                  plenary-nvim
-                  snacks-nvim
-                  nvim-notify
-                  project-nvim
+                  inputs.blink.packages.${pkgs.stdenv.hostPlatform.system}.default
+
                   actions-preview-nvim
-                  which-key-nvim
-                  nvim-lspconfig
-                  nvim-autopairs
                   conform-nvim
                   gitsigns-nvim
-                  rustaceanvim
                   go-nvim
                   hover-nvim
                   lualine-nvim
-                  inputs.blink.packages.${pkgs.stdenv.hostPlatform.system}.default
+                  nvim-autopairs
+                  nvim-lspconfig
+                  nvim-notify
+                  nvim-treesitter.withAllGrammars
                   nvim-web-devicons
+                  plenary-nvim
+                  project-nvim
+                  rustaceanvim
+                  snacks-nvim
+                  telescope-nvim
+                  which-key-nvim
                 ]
                 ++ pkgs.lib.mapAttrsToList (
                   pname: pin:

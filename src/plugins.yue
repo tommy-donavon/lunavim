@@ -21,4 +21,6 @@ export default {
   setup: ->
     $do_plugin_cfg "ui", v for v in *cfg.ui
     $do_plugin_cfg "editor", v for v in *cfg.editor
+
+    vim.notify = require "notify"
 }

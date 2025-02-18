@@ -1,0 +1,18 @@
+deps = [ "chafa", "fd", "freeze", "lazygit", "rg" ]
+
+export default {
+    loaded: false
+    check: ->
+      vim.health.start('lunavim report')
+      if loaded
+        vim.health.ok("lunavim loaded correctly")
+      else
+        vim.health.error("lunavim did not load correctly")
+      for dep in *deps
+          if vim.fn.executable(dep) == 1
+            vim.health.ok(dep .. " is properly installed")
+          else
+            vim.health.error(dep .. " is not properly installed")
+
+}
+

@@ -1,0 +1,9 @@
+export default {
+  config: ->
+    import "project"
+
+    project.setup
+      exclude_dirs: { "*//*" }
+      detection_methods: { "pattern" }
+      patterns: { ".git" }
+}

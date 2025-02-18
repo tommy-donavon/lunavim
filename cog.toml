@@ -1,0 +1,19 @@
+branch_whitelist = [
+    "main"
+]
+skip_ci = "[skip-ci]"
+
+[git_hooks.commit-msg]
+script = """#!/bin/sh
+set -e
+cog verify --file $1
+cog check
+"""
+
+[changelog]
+path = "CHANGELOG.md"
+template = "full_hash"
+authors = [
+    { username = "tommy-donavon", signature = "Tommy" }
+]
+

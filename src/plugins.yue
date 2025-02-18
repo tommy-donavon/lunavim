@@ -1,0 +1,24 @@
+import "macros" as { $ }
+
+cfg = 
+  ui:
+    * "everforest"
+    * "lualine"
+    * "menu"
+    * "smear_cursor"
+  editor:
+    * "actions_preview"
+    * "blink"
+    * "conform"
+    * "go"
+    * "gitsigns"
+    * "hover"
+    * "which-key"
+    * "snacks"
+    * "rust"
+
+export default {
+  setup: ->
+    $do_plugin_cfg "ui", v for v in *cfg.ui
+    $do_plugin_cfg "editor", v for v in *cfg.editor
+}

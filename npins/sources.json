@@ -1,0 +1,146 @@
+{
+  "pins": {
+    "everforest-nvim": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "neanias",
+        "repo": "everforest-nvim"
+      },
+      "branch": "main",
+      "revision": "76cd62618afd415215e5bcdd7d2667c0323669bb",
+      "url": "https://github.com/neanias/everforest-nvim/archive/76cd62618afd415215e5bcdd7d2667c0323669bb.tar.gz",
+      "hash": "09a8c6ci7yz1b9vrj1awzw3ffbs3rchql6syynl73saw2732hr3f"
+    },
+    "freeze.nvim": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "charm-and-friends",
+        "repo": "freeze.nvim"
+      },
+      "branch": "main",
+      "revision": "65c6e693a1d8ebd816bd3076350efa8e080c1c4a",
+      "url": "https://github.com/charm-and-friends/freeze.nvim/archive/65c6e693a1d8ebd816bd3076350efa8e080c1c4a.tar.gz",
+      "hash": "1cnf1d403jkz4xgknzw8v95bgram4ic188as4awc0ynvaisnrjcv"
+    },
+    "friendly-snippets": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "rafamadriz",
+        "repo": "friendly-snippets"
+      },
+      "branch": "main",
+      "revision": "efff286dd74c22f731cdec26a70b46e5b203c619",
+      "url": "https://github.com/rafamadriz/friendly-snippets/archive/efff286dd74c22f731cdec26a70b46e5b203c619.tar.gz",
+      "hash": "1vb5l8ipfjwsrqffbq8v2z5p1cpg035b3gk57692wd7835kr3i13"
+    },
+    "impatient.nvim": {
+      "type": "GitRelease",
+      "repository": {
+        "type": "GitHub",
+        "owner": "lewis6991",
+        "repo": "impatient.nvim"
+      },
+      "pre_releases": false,
+      "version_upper_bound": null,
+      "release_prefix": null,
+      "version": "v0.2",
+      "revision": "969f2c5c90457612c09cf2a13fee1adaa986d350",
+      "url": "https://api.github.com/repos/lewis6991/impatient.nvim/tarball/v0.2",
+      "hash": "10nlz4hq1bqjsnj9pkadi3xjj74wn36f2vr66hqp7wm2z7i5zbq3"
+    },
+    "inlay-hints.nvim": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "simrat39",
+        "repo": "inlay-hints.nvim"
+      },
+      "branch": "main",
+      "revision": "006b0898f5d3874e8e528352103733142e705834",
+      "url": "https://github.com/simrat39/inlay-hints.nvim/archive/006b0898f5d3874e8e528352103733142e705834.tar.gz",
+      "hash": "111h7zxf6hrsx7253r010rnandqvs7zg2qccarwi6dkyqg9v2dbh"
+    },
+    "markdown-preview.nvim": {
+      "type": "GitRelease",
+      "repository": {
+        "type": "GitHub",
+        "owner": "iamcco",
+        "repo": "markdown-preview.nvim"
+      },
+      "pre_releases": false,
+      "version_upper_bound": null,
+      "release_prefix": null,
+      "version": "v0.0.10",
+      "revision": "c5533033137a8836f2f90027894753e4de31edd8",
+      "url": "https://api.github.com/repos/iamcco/markdown-preview.nvim/tarball/v0.0.10",
+      "hash": "1kjd816c4szv75r9xzd6yp64r49ra0vyx54saf4fh86kn76hbyag"
+    },
+    "menu": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nvzone",
+        "repo": "menu"
+      },
+      "branch": "main",
+      "revision": "7769b17c2a131108c02b10e9f844e504aa605cc2",
+      "url": "https://github.com/nvzone/menu/archive/7769b17c2a131108c02b10e9f844e504aa605cc2.tar.gz",
+      "hash": "1g81lmhd2vb0dq4am5wbl9q152k5qg6rzyw9z4v6img1im958hal"
+    },
+    "minty": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nvzone",
+        "repo": "minty"
+      },
+      "branch": "main",
+      "revision": "6dce9f097667862537823d515a0250ce58faab05",
+      "url": "https://github.com/nvzone/minty/archive/6dce9f097667862537823d515a0250ce58faab05.tar.gz",
+      "hash": "0wkp6wjc630mh3i0xd41x5shdkyzwh7n53y7rl304smmz0bk38jk"
+    },
+    "smear-cursor.nvim": {
+      "type": "GitRelease",
+      "repository": {
+        "type": "GitHub",
+        "owner": "sphamba",
+        "repo": "smear-cursor.nvim"
+      },
+      "pre_releases": false,
+      "version_upper_bound": null,
+      "release_prefix": null,
+      "version": "v0.4.2",
+      "revision": "98a9e4679ffca5d04c6cce93e794ba706494d129",
+      "url": "https://api.github.com/repos/sphamba/smear-cursor.nvim/tarball/v0.4.2",
+      "hash": "109220mm7bliajwgh31x75g557jaz35d4papxgw3scjgzmnpcy9r"
+    },
+    "volt": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nvzone",
+        "repo": "volt"
+      },
+      "branch": "main",
+      "revision": "3bedb1576db574af160643eea7df3b09dbe5ee9c",
+      "url": "https://github.com/nvzone/volt/archive/3bedb1576db574af160643eea7df3b09dbe5ee9c.tar.gz",
+      "hash": "0x696qsia05hfm86rwb26iajgyihhv15n3hwmz9c78k5zd92rz48"
+    },
+    "yuescript-vim": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "pigpigyyy",
+        "repo": "yuescript-vim"
+      },
+      "branch": "master",
+      "revision": "4a1065386b8396cb138d3cda0362fdadfefb8576",
+      "url": "https://github.com/pigpigyyy/yuescript-vim/archive/4a1065386b8396cb138d3cda0362fdadfefb8576.tar.gz",
+      "hash": "128105asisalhf7qffb5llx7vlrb3l49kzn88djaw2bljs1md2gq"
+    }
+  },
+  "version": 3
+}

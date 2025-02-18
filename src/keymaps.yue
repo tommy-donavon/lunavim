@@ -1,0 +1,27 @@
+import "macros" as { $ }
+
+mapleader = " "
+
+cfg =
+  :mapleader
+
+  normal:
+    * { "<leader>sv", ":source $MYVIMRC<CR>", { desc: "[s]ource [v]imrc", noremap: true } }
+
+  func:
+    * {"n", "<leader>fd", vim.diagnostic.open_float, { desc: "[f]loating [d]iagnostics window" } }
+
+  term:
+    * { "<leader><Esc>", "[[<C-\\><C-n>]]", { noremap: true } }
+
+export default {
+    :cfg
+
+    setup: ->
+      vim.g.mapleader = cfg.mapleader
+
+      $kbind "n", v[1], v[2], v[3] for v in *cfg.normal
+      $kbind "t", v[1], v[2], v[3] for v in *cfg.term
+      $fbind v[1], v[2], v[3], v[4] for v in *cfg.func
+}
+

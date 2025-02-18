@@ -1,0 +1,19 @@
+export default {
+  config: ->
+    import "which-key" as wk
+
+    wk.setup
+      icons:
+        mappings: true
+        keys: {}
+      spec:
+       * { "<leader>c", group: "[c]ode", mode: { "n", "x" } }
+       * { "<leader>d", group: "[d]ocument" }
+       * { "<leader>r", group: "[r]ename" }
+       * { "<leader>s", group: "[s]earch" }
+       * { "<leader>w", group: "[w]orkspace" }
+       * { "<leader>t", group: "[t]oggle" }
+       * { "<leader>g", group: "[g]it", mode: { "n", "v" } }
+       * { "<leader>f", group: "[f]loat", mode: { "n", "v" } }
+       * { "<leader>m", group: "for[m]at", mode: {"n", "v"} }
+}

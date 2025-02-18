@@ -1,0 +1,23 @@
+import "macros" as { $ }
+import "menu" as mn
+import "menu.utils" as mutils
+
+open = (opts = "default", extra = {}) ->
+  mn.open opts, extra
+
+mouse_open = ->
+  mutils.delete_old_menus!
+
+  vim.cmd.exec '"normal! \\<RightMouse>"'
+  
+  buf = vim.fn.getmousepos!.winid
+    |> vim.api.nvim_win_get_buf
+
+  options = vim.bo[buf].ft == "NvimTree" and "nvimtree" or "default"
+  open options, { mouse: true }
+
+export default {
+  config: ->
+    $fbind "n", "<C-t>", open 
+    $fbind { "n", "v" }, "<RightMouse>", mouse_open
+}

@@ -1,0 +1,11 @@
+--[[ keybind macros ]]
+export macro kbind = (mode = "n", map, cmd, opt = {}) ->
+  "vim.api.nvim_set_keymap #{mode}, #{map}, #{cmd}, #{opt}"
+
+export macro fbind = (mode = "n", map, func, opt = {}) ->
+  "vim.keymap.set #{mode}, #{map}, #{func}, #{opt}"
+
+--[[ cfg macros ]]
+export macro do_plugin_cfg = (module, plugin) ->
+  "require(\"lunavim.plugins.\" .. #{module} .. \".\" .. #{plugin}).config!"
+

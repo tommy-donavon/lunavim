@@ -1,4 +1,4 @@
-deps = [ "chafa", "fd", "freeze", "lazygit", "rg" ]
+deps = [ "magick", "chafa", "fd", "freeze", "lazygit", "rg" ]
 
 export default {
     check: ->

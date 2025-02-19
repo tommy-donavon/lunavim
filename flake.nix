@@ -65,7 +65,9 @@
 
               appName = "lunavim";
 
-              extraLuaPackages = p: [ p.luafilesystem ];
+              extraLuaPackages = p: [
+                p.luafilesystem
+              ];
 
               initLua = ''
                 require('lunavim')
@@ -130,6 +132,7 @@
                   lazygit
                   ripgrep
                   chafa
+                  imagemagick
                   ;
               };
             };

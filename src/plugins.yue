@@ -16,6 +16,7 @@ cfg =
     * "which-key"
     * "snacks"
     * "rust"
+    * "treesitter"
 
 export default {
   setup: ->

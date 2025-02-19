@@ -38,7 +38,6 @@ cfg =
   lazygit:
     enable: true
     configure: true
-    --theme_path: script_path! .. "../../assets/lazy-theme.yml"
 
   picker:
     sources:

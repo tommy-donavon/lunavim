@@ -11,6 +11,7 @@ cfg =
     easing: "linear"
     fps: 60
   bigfile: { enable: true }
+  image: { enable: true }
   dashboard:
     enable: true
     width: 60

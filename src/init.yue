@@ -16,5 +16,3 @@ keymaps.setup!
 ft.setup!
 plugins.setup!
 lsp.setup!
-health.loaded = true
-

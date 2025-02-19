@@ -4,6 +4,20 @@ default_indent = 4
 
 export default {
     setup: ->
+        vim.api.nvim_create_autocmd "TextYankPost",
+          pattern: "*"
+          desc: "highlight when yanking (copying) text"
+          group: vim.api.nvim_create_augroup "kickstart-highlight-yank",
+            clear: true
+          callback: ->
+            vim.highlight.on_yank!
+        vim.api.nvim_create_autocmd "BufReadPost"
+          pattern: "*"
+          callback: ->
+            line = vim.fn.line '\'"'
+            if line >= 1 and line <= vim.fn.line "$"
+              vim.cmd "normal! g`"
+
         vim.opt.clipboard\append "unnamedplus"
         setopts vim.opt, mkdef
           * "autoindent"

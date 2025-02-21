@@ -10,10 +10,10 @@ check:
 # clean compiled lua
 [group('dev')]
 clean:
-	cd src && find . -type f -name '*.lua' -delete
+    rm dist
 
 # compile yue
 [group('dev')]
 build: clean
-	yue -m init.yue
-	cd lua && yue -m .
+    mkdir dist
+    cd src && yue -t ../dist .

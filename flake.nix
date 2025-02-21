@@ -92,6 +92,7 @@
                   nvim-notify
                   nvim-treesitter.withAllGrammars
                   nvim-web-devicons
+                  overseer-nvim
                   plenary-nvim
                   project-nvim
                   rustaceanvim

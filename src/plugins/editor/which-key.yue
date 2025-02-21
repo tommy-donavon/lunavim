@@ -16,4 +16,5 @@ export default {
        * { "<leader>g", group: "[g]it", mode: { "n", "v" } }
        * { "<leader>f", group: "[f]loat", mode: { "n", "v" } }
        * { "<leader>m", group: "for[m]at", mode: {"n", "v"} }
+       * { "<leader>o", group: "[o]verseer", mode: {"n", "v"} }
 }

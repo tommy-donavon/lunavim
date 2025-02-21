@@ -17,6 +17,7 @@ cfg =
     * "snacks"
     * "rust"
     * "treesitter"
+    * "overseer"
 
 export default {
   setup: ->

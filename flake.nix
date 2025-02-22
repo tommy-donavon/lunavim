@@ -93,6 +93,7 @@
                   nvim-notify
                   nvim-treesitter.withAllGrammars
                   nvim-web-devicons
+                  oil-nvim
                   overseer-nvim
                   outline-nvim
                   plenary-nvim

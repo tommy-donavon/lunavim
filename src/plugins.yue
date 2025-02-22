@@ -15,6 +15,7 @@ cfg =
     * "go"
     * "hover"
     * "markdown-preview"
+    * "oil"
     * "outline"
     * "overseer"
     * "rust"

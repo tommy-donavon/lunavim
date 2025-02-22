@@ -142,13 +142,10 @@
             };
         }
       );
-      overlays = forEachSupportedSystem (
-        { pkgs }:
-        {
-          default = final: prev: {
-            lunavim = self.packages.${prev.system}.default;
-          };
-        }
-      );
+      overlays = {
+        default = final: prev: {
+          lunavim = self.packages.${prev.system}.default;
+        };
+      };
     };
 }

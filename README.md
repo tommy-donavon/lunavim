@@ -43,4 +43,4 @@ you may add it as a flake input and apply the outputted overlay
 > `lunavim` is a wrapped distribution of neovim.
 > once installed it can be invoked with the regular `nvim` command
 
-Thanks to [Gerg-L](github.com/Greg-L) for their fantastic work on `mnw` which made wrapping my existing configuration a breeze
+Thanks to [Gerg-L](github.com/Greg-L) for their fantastic work on [mnw](https://github.com/Gerg-L/mnw) which made wrapping my existing configuration a breeze

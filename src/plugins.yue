@@ -7,17 +7,19 @@ cfg =
     * "menu"
     * "smear_cursor"
   editor:
+    * "which-key"
     * "actions_preview"
     * "blink"
     * "conform"
-    * "go"
     * "gitsigns"
+    * "go"
     * "hover"
-    * "which-key"
-    * "snacks"
-    * "rust"
-    * "treesitter"
+    * "markdown-preview"
+    * "outline"
     * "overseer"
+    * "rust"
+    * "snacks"
+    * "treesitter"
 
 export default {
   setup: ->
@@ -26,7 +28,7 @@ export default {
     $do_plugin_cfg "ui", v for v in *cfg.ui
     $do_plugin_cfg "editor", v for v in *cfg.editor
 
+    -- [[ misc config ]]
     vim.notify = require "notify"
-
     npairs.setup!
 }

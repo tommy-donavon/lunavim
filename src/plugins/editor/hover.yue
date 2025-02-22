@@ -13,16 +13,16 @@ export default {
     vim.o.mousemoveevent = true
     wk.add {
       mode: { "n" }
-      { "K", hover.hover, { desc: "hover.nvim" } }
-      { "gK", hover.hover_select, { desc: "hover.nvim (select)" } }
+      { "K", hover.hover, desc: "hover.nvim" }
+      { "gK", hover.hover_select, desc: "hover.nvim (select)" }
       { "<C-p>",
         () -> hover.hover_switch "previous",
-        { desc: "hover.nvim (previous source)" }
+        desc: "hover.nvim (previous source)"
       }
       { "<C-n>",
         () -> hover.hover_switch "next",
-        { desc: "hover.nvim (next source)" }
+        desc: "hover.nvim (next source)"
       }
-      { "<MouseMove>", hover.hover_mouse, { desc: "hover.nvim (mouse)" } }
+      { "<MouseMove>", hover.hover_mouse, desc: "hover.nvim (mouse)" }
     }
 }

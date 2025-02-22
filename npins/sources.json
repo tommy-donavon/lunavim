@@ -1,5 +1,17 @@
 {
   "pins": {
+    "FixCursorHold.nvim": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "antoinemadec",
+        "repo": "FixCursorHold.nvim"
+      },
+      "branch": "master",
+      "revision": "1900f89dc17c603eec29960f57c00bd9ae696495",
+      "url": "https://github.com/antoinemadec/FixCursorHold.nvim/archive/1900f89dc17c603eec29960f57c00bd9ae696495.tar.gz",
+      "hash": "0p7xh31qp836xvxbm1y3r4djv3r7ivxhx7jxwzgd380d029ql1hz"
+    },
     "everforest-nvim": {
       "type": "Git",
       "repository": {
@@ -62,21 +74,6 @@
       "revision": "006b0898f5d3874e8e528352103733142e705834",
       "url": "https://github.com/simrat39/inlay-hints.nvim/archive/006b0898f5d3874e8e528352103733142e705834.tar.gz",
       "hash": "111h7zxf6hrsx7253r010rnandqvs7zg2qccarwi6dkyqg9v2dbh"
-    },
-    "markdown-preview.nvim": {
-      "type": "GitRelease",
-      "repository": {
-        "type": "GitHub",
-        "owner": "iamcco",
-        "repo": "markdown-preview.nvim"
-      },
-      "pre_releases": false,
-      "version_upper_bound": null,
-      "release_prefix": null,
-      "version": "v0.0.10",
-      "revision": "c5533033137a8836f2f90027894753e4de31edd8",
-      "url": "https://api.github.com/repos/iamcco/markdown-preview.nvim/tarball/v0.0.10",
-      "hash": "1kjd816c4szv75r9xzd6yp64r49ra0vyx54saf4fh86kn76hbyag"
     },
     "menu": {
       "type": "Git",

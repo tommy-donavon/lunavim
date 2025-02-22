@@ -38,6 +38,6 @@ export default {
 
     conform.setup cfg
 
-    $fbind { "n", "v" }, "<leader>mr", format_range, { desc: "for[m]at file or range" }
-    $fbind "n", "<leader>mf", format_file, { desc: "for[m]at current file" }
+    $fbind { "n", "v" }, "<leader>fr", format_range, { desc: "[f]ormat file or range" }
+    $fbind "n", "<leader>ff", format_file, { desc: "[f]ormat current file" }
 }

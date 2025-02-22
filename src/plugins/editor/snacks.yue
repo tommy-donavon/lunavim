@@ -106,20 +106,20 @@ export default {
       -- [[ search bindings ]]
       * {
         mode: { "n" }
-        { "<leader>sk", picker.keymaps, { desc: "[s]earch [k]eymaps" } }
-        { "<leader>sf", picker.files, { desc: "[s]earch [f]iles" } }
-        { "<leader>sg", picker.grep, { desc: "[s]earch by [g]rep" } }
-        { "<leader>sd", picker.diagnostics, { desc: "[s]earch [d]iagnostics" } }
-        { "<leader>sr", picker.recent, { desc: "[s]earch [r]ecent files" } }
-        { "<leader><leader>", picker.buffers, { desc: "[] find existing buffers" } }
-        { "<leader>sh", picker.help, { desc: "[s]earch [h]elp" } }
+        { "<leader>sk", picker.keymaps, desc: "[s]earch [k]eymaps" }
+        { "<leader>sf", picker.files, desc: "[s]earch [f]iles" }
+        { "<leader>sg", picker.grep, desc: "[s]earch by [g]rep" }
+        { "<leader>sd", picker.diagnostics, desc: "[s]earch [d]iagnostics" }
+        { "<leader>sr", picker.recent, desc: "[s]earch [r]ecent files" }
+        { "<leader><leader>", picker.buffers, desc: "[] find existing buffers" }
+        { "<leader>sh", picker.help, desc: "[s]earch [h]elp" }
       }
       -- [[ toggle bindings ]]
       * {
         mode: { "n", "v" }
-        { "<leader>tt", snacks.terminal.toggle, { desc: "[t]oggle [t]erminal" } }
-        { "<leader>tf", picker.explorer, { desc: "[t]oggle [f]ile explorer", silent: true } }
-        { "<leader>tg", snacks.lazygit.open, { desc: "[t]oggle Lazy [g]it" } }
-        { "<leader>tz", snacks.zen.zen, { desc: "[t]oggle [z]en mode" } }
+        { "<leader>tt", snacks.terminal.toggle, desc: "[t]oggle [t]erminal" }
+        { "<leader>tf", picker.explorer, desc: "[t]oggle [f]ile explorer", silent: true }
+        { "<leader>tg", snacks.lazygit.open, desc: "[t]oggle Lazy [g]it" }
+        { "<leader>tz", snacks.zen.zen, desc: "[t]oggle [z]en mode" }
       }
 }

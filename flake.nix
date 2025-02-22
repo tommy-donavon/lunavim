@@ -87,12 +87,14 @@
                   go-nvim
                   hover-nvim
                   lualine-nvim
+                  markdown-preview-nvim
                   nvim-autopairs
                   nvim-lspconfig
                   nvim-notify
                   nvim-treesitter.withAllGrammars
                   nvim-web-devicons
                   overseer-nvim
+                  outline-nvim
                   plenary-nvim
                   project-nvim
                   rustaceanvim

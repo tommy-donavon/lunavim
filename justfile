@@ -10,7 +10,7 @@ check:
 # clean compiled lua
 [group('dev')]
 clean:
-    rm dist
+    rm -rf dist
 
 # compile yue
 [group('dev')]

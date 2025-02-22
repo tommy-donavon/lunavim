@@ -1,0 +1,9 @@
+export default {
+  config: ->
+    import "which-key" as wk
+
+    wk.add {
+      mode: { "n", "v" }
+      { "<leader>tmp", ":MarkdownPreviewToggle<CR>", desc: "[t]oggle [m]arkdown preview" }
+    }
+}

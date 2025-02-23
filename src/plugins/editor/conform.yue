@@ -9,6 +9,15 @@ cfg =
     deno_fmt:
       cwd: cfutils.root_file { "deno.json", "deno.jsonc" }
       require_cwd: true
+    eslint_d:
+      cwd: cfutils.root_file { "package.json" }
+      require_cwd: true
+    prettierd:
+      cwd: cfutils.root_file { "package.json" }
+      require_cwd: true
+    prettier:
+      cwd: cfutils.root_file { "package.json" }
+      require_cwd: true
   formatters_by_ft:
     elixir: { "mix" }
     lua: { "stylua" }

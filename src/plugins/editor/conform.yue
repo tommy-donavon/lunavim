@@ -1,8 +1,14 @@
 import "macros" as { $ }
 
+import "conform.util" as cfutils
+
 cfg = 
   keys: {}
   notify_on_error: true
+  formatters:
+    deno_fmt:
+      cwd: cfutils.root_file { "deno.json", "deno.jsonc" }
+      require_cwd: true
   formatters_by_ft:
     elixir: { "mix" }
     lua: { "stylua" }
@@ -11,9 +17,9 @@ cfg =
     ruby: { "rubocop", "solargraph" }
     svelte: { "eslint_d", "prettierd", "prettier", stop_after_first: false }
     terraform: { "terraform_fmt" }
-    typescript: { "eslint_d", "prettierd", "prettier", stop_after_first: false }
-    javascript: { "eslint_d", "prettierd", "prettier", stop_after_first: false }
-    json: { "prettierd", "prettier", stop_after_first: false }
+    typescript: { "deno_fmt", "eslint_d", "prettierd", "prettier", stop_after_first: false }
+    javascript: { "deno_fmt", "eslint_d", "prettierd", "prettier", stop_after_first: false }
+    json: { "deno_fmt", "prettierd", "prettier", stop_after_first: false }
   format_on_save: (bufr) ->
     disabled_ft = { c: true, cpp: true }
     lsp_format_opt = if disabled_ft[vim.bo[bufr].filetype]

@@ -42,6 +42,7 @@ servers =
     single_file_support: false
   eslint:
     settings: { workingDirectories: { mode: "auto" } }
+  hls: {}
   nil_ls:
     cmd: { "nil" }
     filetypes: { "nix" }

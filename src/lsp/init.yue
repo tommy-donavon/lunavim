@@ -3,13 +3,8 @@ import "lspconfig.configs" as configs
 import "blink.cmp" as blink
 import "inlay-hints" as ih
 
-capabilities = vim.lsp.protocol.make_client_capabilities!
-  |> blink.get_lsp_capabilities
-
-capabilities.textDocument.completion.completionItem.snippetSupport = true
-
 default_opt =
-  capabilities: capabilities
+  capabilities: blink.get_lsp_capabilities!
   autostart: true
   flags:
     debounce_text_changes: 150

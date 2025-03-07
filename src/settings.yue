@@ -4,6 +4,7 @@ default_indent = 4
 
 export default {
     setup: ->
+        vim.loader.enable!
         vim.api.nvim_create_autocmd "TextYankPost",
           pattern: "*"
           desc: "highlight when yanking (copying) text"

@@ -3,7 +3,6 @@ M.loaded = false
 
 local deps = {
   'magick',
-  'chafa',
   'fd',
   'freeze',
   'lazygit',

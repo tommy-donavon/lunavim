@@ -1,7 +1,7 @@
 local lfs = require('lfs')
 
 local cache_path = vim.fn.stdpath(vim.fs.normalize('cache'))
-if not (lfs.attributes(cache_path) == 'directory') then
+if lfs.attributes(cache_path) ~= 'directory' then
   lfs.mkdir(cache_path)
 end
 

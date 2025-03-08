@@ -2,5 +2,4 @@
 *.tmp.a
 *.png
 result
-start.log
-startup.log
+*.log

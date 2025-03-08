@@ -36,12 +36,13 @@
             packages = with pkgs; [
               nil
               self.formatter.${pkgs.stdenv.hostPlatform.system}
-              self.packages.${pkgs.stdenv.hostPlatform.system}.yue
               just
               tokei
               cocogitto
               npins
               lua
+              stylua
+              lua53Packages.luacheck
             ];
 
             shellHook = ''
@@ -53,9 +54,7 @@
       packages = forEachSupportedSystem (
         { pkgs }:
         rec {
-          yue = pkgs.callPackage ./packages/yuescript.nix { };
           lunavim = pkgs.callPackage ./packages/lunavim.nix {
-            inherit yue;
             version = builtins.substring 0 8 self.lastModifiedDate;
           };
           default =
@@ -136,7 +135,6 @@
                   freeze
                   lazygit
                   ripgrep
-                  chafa
                   imagemagick
                   ;
               };

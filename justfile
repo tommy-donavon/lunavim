@@ -5,15 +5,15 @@ default:
 # analyze yue code
 [group('dev')]
 check:
+    @luacheck --globals vim -- src
     @tokei src
 
-# clean compiled lua
+# lint lua code
 [group('dev')]
-clean:
-    rm -rf dist
+lint:
+    @stylua src -c
 
-# compile yue
+# lint and apply possible fixes to lua code
 [group('dev')]
-build: clean
-    mkdir dist
-    cd src && yue -t ../dist .
+lint-fix:
+    @stylua src

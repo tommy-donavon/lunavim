@@ -5,7 +5,7 @@ M.mkdef = function(tbl, default)
     default = true
   end
   for i, v in ipairs(tbl) do
-    if not (type(v) == 'table') then
+    if type(v) ~= 'table' then
       tbl[i] = { v, default }
     end
   end

@@ -1,5 +1,4 @@
 .direnv/
-*.lua
 *.tmp.a
 *.png
 result

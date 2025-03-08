@@ -1,7 +1,0 @@
-export default {
-    config: ->
-      import "everforest"
-      everforest.setup
-        background: "medium"
-      everforest.load!
-}

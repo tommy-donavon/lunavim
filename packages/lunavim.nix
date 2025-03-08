@@ -1,17 +1,16 @@
 {
   vimUtils,
-  yue,
   version,
 }:
 vimUtils.buildVimPlugin {
   pname = "lunavim";
   inherit version;
+
   src = ../src;
-  buildInputs = [ yue ];
+  nvimSkipModule = [ "init" ];
 
   preInstall = ''
     mkdir -p $out/lua/lunavim
-    yue -m -t $out/lua/lunavim .
-    cp -r assets $out/lua/lunavim
+    cp -r . $out/lua/lunavim
   '';
 }

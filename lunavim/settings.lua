@@ -1,14 +1,33 @@
 local utils = require('lunavim.utils')
 
-utils.setopts(
-  vim.opt,
-  utils.mkdef {
-    'autoindent',
-    'breakindent',
-    'expandtab',
-    { 'mouse', 'a' },
-  }
-)
+local default_indent = 4
+
+vim.loader.enable()
+vim.g.mapleader = ' '
+
+vim.diagnostic.config { virtual_text = true }
+
+vim.api.nvim_create_autocmd('TextYankPost', {
+  pattern = '*',
+  desc = 'highlight when yanking (copying) text',
+  group = vim.api.nvim_create_augroup('kickstart-highlight-yank', {
+    clear = true,
+  }),
+  callback = function()
+    return vim.highlight.on_yank()
+  end,
+})
+vim.api.nvim_create_autocmd('BufReadPost', {
+  pattern = '*',
+  callback = function()
+    local line = vim.fn.line('\'"')
+    if line >= 1 and line <= vim.fn.line('$') then
+      return vim.cmd('normal! g`')
+    end
+  end,
+})
+
+vim.opt.clipboard:append('unnamedplus')
 
 utils.setopts(
   vim.opt,
@@ -29,45 +48,51 @@ utils.setopts(
     'spell',
     'undofile',
     'visualbell',
-    {
-      'mouse',
-      'a',
-    },
-    {
-      'shiftwidth',
-      default_indent,
-    },
-    {
-      'showbreak',
-      '+++',
-    },
-    {
-      'softtabstop',
-      default_indent,
-    },
-    {
-      'spelllang',
-      'en_us',
-    },
-    {
-      'tabstop',
-      default_indent,
-    },
-    {
-      'timeoutlen',
-      500,
-    },
-    {
-      'undolevels',
-      1000,
-    },
-    {
-      'listchars',
-      {
-        tab = '» ',
-        trail = '·',
-        nbsp = '␣',
-      },
-    },
+    { 'mouse', 'a' },
+    { 'shiftwidth', default_indent },
+    { 'showbreak', '+++' },
+    { 'softtabstop', default_indent },
+    { 'spelllang', 'en_us' },
+    { 'tabstop', default_indent },
+    { 'timeoutlen', 500 },
+    { 'undolevels', 1000 },
+    { 'listchars', {
+      tab = '» ',
+      trail = '·',
+      nbsp = '␣',
+    } },
   }
 )
+
+-- disable builtin plugins
+utils.setopts(
+  vim.g,
+  utils.mkdef {
+    -- 'loaded_gzip',
+    -- 'loaded_tar',
+    -- 'loaded_tarPlugin',
+    -- 'loaded_zipPlugin',
+    -- 'loaded_2html_plugin',
+    -- 'loaded_netrw',
+    -- 'loaded_netrwPlugin',
+    -- 'loaded_matchparen',
+    -- 'loaded_matchit',
+    -- 'loaded_spec',
+    { 'loaded_gzip', 1 },
+    { 'loaded_tar', 1 },
+    { 'loaded_tarPlugin', 1 },
+    { 'loaded_zipPlugin', 1 },
+    { 'loaded_2html_plugin', 1 },
+    { 'loaded_netrw', 1 },
+    { 'loaded_netrwPlugin', 1 },
+    { 'loaded_matchit', 1 },
+    { 'loaded_matchparen', 1 },
+    { 'loaded_spec', 1 },
+  }
+)
+
+utils.runcmds {
+  'filetype indent on',
+  'filetype plugin on',
+  'syntax on',
+}

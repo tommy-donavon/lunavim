@@ -9,12 +9,12 @@
   };
 
   outputs =
-    {
+    inputs@{
       self,
       nixpkgs,
       systems,
       ...
-    }@inputs:
+    }:
     let
       forEachSupportedSystem =
         f:
@@ -93,6 +93,7 @@
                   nvim-notify
                   nvim-treesitter.withAllGrammars
                   nvim-web-devicons
+                  lz-n
                   oil-nvim
                   overseer-nvim
                   outline-nvim

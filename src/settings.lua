@@ -68,16 +68,6 @@ utils.setopts(
 utils.setopts(
   vim.g,
   utils.mkdef {
-    -- 'loaded_gzip',
-    -- 'loaded_tar',
-    -- 'loaded_tarPlugin',
-    -- 'loaded_zipPlugin',
-    -- 'loaded_2html_plugin',
-    -- 'loaded_netrw',
-    -- 'loaded_netrwPlugin',
-    -- 'loaded_matchparen',
-    -- 'loaded_matchit',
-    -- 'loaded_spec',
     { 'loaded_gzip', 1 },
     { 'loaded_tar', 1 },
     { 'loaded_tarPlugin', 1 },

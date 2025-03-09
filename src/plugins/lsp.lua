@@ -18,6 +18,10 @@ local default_opt = {
   end,
 }
 local servers = {
+  astro = {
+    filetypes = { 'astro' },
+    root_dir = lspconfig.util.root_pattern('astro.config.mjs'),
+  },
   lua_ls = {
     cmd = {
       'lua-language-server',

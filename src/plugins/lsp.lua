@@ -22,6 +22,9 @@ local servers = {
     filetypes = { 'astro' },
     root_dir = lspconfig.util.root_pattern('astro.config.mjs'),
   },
+  phpactor = {
+    root_dir = lspconfig.util.root_pattern('composer.json'),
+  },
   lua_ls = {
     cmd = {
       'lua-language-server',

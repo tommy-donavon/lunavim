@@ -9,6 +9,7 @@ vim.filetype.add {
   },
   pattern = {
     ['flake.lock'] = 'json',
+    ['.*%.blade%.php'] = 'blade',
   },
   filename = {
     ['.Justfile'] = 'just',

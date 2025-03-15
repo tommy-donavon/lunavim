@@ -90,7 +90,6 @@
                   nvim-autopairs
                   nvim-lspconfig
                   nvim-notify
-                  nvim-treesitter.withAllGrammars
                   nvim-web-devicons
                   lz-n
                   oil-nvim
@@ -102,6 +101,23 @@
                   snacks-nvim
                   telescope-nvim
                   which-key-nvim
+                  (nvim-treesitter.withPlugins (
+                    _:
+                    nvim-treesitter.allGrammars
+                    ++ [
+                      (pkgs.tree-sitter.buildGrammar {
+                        language = "blade";
+                        version = "0.11.0";
+                        src = pkgs.fetchFromGitHub {
+                          owner = "EmranMR";
+                          repo = "tree-sitter-blade";
+                          rev = "a9997ceb8d2e0cd902fe649a33b476d37a0d6042";
+                          sha256 = "1dfc38q9j2i1lyhzl9z1hxgsa1id7bjmhbjdjnqlz82bg6qrsc9x";
+
+                        };
+                      })
+                    ]
+                  ))
                 ]
                 ++ pkgs.lib.mapAttrsToList (
                   pname: pin:
@@ -131,11 +147,14 @@
                   golangci-lint
                   golangci-lint-langserver
 
+                  nodejs-slim
+
                   fd
                   freeze
                   lazygit
                   ripgrep
                   imagemagick
+                  tree-sitter
                   ;
               };
             };

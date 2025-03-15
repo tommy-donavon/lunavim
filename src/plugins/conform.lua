@@ -8,16 +8,17 @@ return {
     conform.setup {
       keys = {},
       formatters_by_ft = {
-        lua = { 'stylua' },
-        terraform = { 'terraform_fmt' },
-        javascript = { 'eslint_d', 'prettierd', 'prettier', stop_after_first = true },
-        typescript = { 'eslint_d', 'prettierd', 'prettier', stop_after_first = false },
-        svelte = { 'eslint_d', 'prettierd', 'prettier', stop_after_first = false },
+        blade = { 'blade-formatter' },
         elixir = { 'mix' },
+        javascript = { 'eslint_d', 'prettierd', 'prettier', stop_after_first = true },
         json = { 'prettierd', 'prettier', stop_after_first = false },
+        lua = { 'stylua' },
         nix = { 'nixfmt' },
         python = { 'black', stop_after_first = true },
         ruby = { 'rubocop', 'solargraph' },
+        svelte = { 'eslint_d', 'prettierd', 'prettier', stop_after_first = false },
+        terraform = { 'terraform_fmt' },
+        typescript = { 'eslint_d', 'prettierd', 'prettier', stop_after_first = false },
       },
       notify_on_error = true,
       format_on_save = function(bufnr)

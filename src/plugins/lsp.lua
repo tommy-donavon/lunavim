@@ -24,6 +24,7 @@ local servers = {
   },
   phpactor = {
     root_dir = lspconfig.util.root_pattern('composer.json'),
+    filetypes = { 'php', 'blade', 'php_only' },
   },
   lua_ls = {
     cmd = {
@@ -149,6 +150,7 @@ local servers = {
   terraformls = {},
   tflint = {},
   zls = {},
+  svelte = {},
 }
 
 return {

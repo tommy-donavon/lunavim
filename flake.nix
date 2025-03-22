@@ -99,7 +99,6 @@
                   project-nvim
                   rustaceanvim
                   snacks-nvim
-                  telescope-nvim
                   which-key-nvim
                   (nvim-treesitter.withPlugins (
                     _:

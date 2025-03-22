@@ -36,13 +36,16 @@
             packages = with pkgs; [
               nil
               self.formatter.${pkgs.stdenv.hostPlatform.system}
-              just
-              tokei
+
               cocogitto
+              just
               npins
+              tokei
+
               lua
-              stylua
+              lua-language-server
               lua53Packages.luacheck
+              stylua
             ];
 
             shellHook = ''
@@ -99,7 +102,6 @@
                   project-nvim
                   rustaceanvim
                   snacks-nvim
-                  telescope-nvim
                   which-key-nvim
                   (nvim-treesitter.withPlugins (
                     _:
@@ -133,28 +135,17 @@
               extraBinPath = builtins.attrValues {
                 inherit (pkgs)
                   deadnix
-                  statix
                   nil
-
-                  lua-language-server
-                  stylua
-
-                  vscode-langservers-extracted
-                  typos-lsp
-
-                  go
-                  gopls
-                  golangci-lint
-                  golangci-lint-langserver
+                  statix
 
                   nodejs-slim
+                  typos-lsp
 
                   fd
                   freeze
+                  imagemagick
                   lazygit
                   ripgrep
-                  imagemagick
-                  tree-sitter
                   ;
               };
             };

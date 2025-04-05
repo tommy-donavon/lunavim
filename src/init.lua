@@ -9,6 +9,7 @@ require('lunavim.settings')
 require('lunavim.keymaps')
 require('lunavim.ft')
 require('lz.n').load('lunavim.plugins')
+require('lunavim.lsp')
 
 require('nvim-autopairs').setup()
 vim.notify = require('notify')

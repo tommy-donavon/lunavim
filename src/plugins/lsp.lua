@@ -26,32 +26,6 @@ local servers = {
     root_dir = lspconfig.util.root_pattern('composer.json'),
     filetypes = { 'php', 'blade', 'php_only' },
   },
-  lua_ls = {
-    cmd = {
-      'lua-language-server',
-    },
-    filetypes = {
-      'lua',
-    },
-    settings = {
-      Lua = {
-        runtime = {
-          version = 'LuaJIT',
-          special = {
-            reload = 'require',
-          },
-        },
-        workspace = {
-          library = {
-            vim.fn.expand('$VIMRUNTIME/lua'),
-            vim.fn.expand('$VIMRUNTIME/lua/vim/lsp'),
-            vim.fn.stdpath('data') .. '/lazy/lazy.nvim/lua/lazy',
-            '${3rd}/luv/library',
-          },
-        },
-      },
-    },
-  },
   ts_ls = {
     root_dir = lspconfig.util.root_pattern('package.json'),
     single_file_support = false,

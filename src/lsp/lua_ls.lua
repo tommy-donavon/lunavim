@@ -11,11 +11,8 @@ return {
         },
       },
       workspace = {
-        library = {
-          vim.fn.expand('$VIMRUNTIME/lua'),
-          vim.fn.expand('$VIMRUNTIME/lua/vim/lsp'),
-          '${3rd}/luv/library',
-        },
+        library = { vim.env.VIMRUNTIME },
+        checkThirdParty = false,
       },
     },
   },

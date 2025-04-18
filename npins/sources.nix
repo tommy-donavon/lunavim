@@ -81,6 +81,6 @@ builtins.mapAttrs
     let
       json = lib.importJSON ./sources.json;
     in
-    assert lib.assertMsg (json.version == 3) "Npins version mismatch!";
+    assert lib.assertMsg (json.version == 5) "Npins version mismatch!";
     json.pins
   )

@@ -91,7 +91,6 @@
                   lualine-nvim
                   markdown-preview-nvim
                   nvim-autopairs
-                  nvim-lspconfig
                   nvim-notify
                   nvim-web-devicons
                   lz-n

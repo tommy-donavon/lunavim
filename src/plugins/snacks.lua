@@ -81,25 +81,16 @@ local cfg = {
       { icon = ' ', title = 'Keymaps', section = 'keys', indent = 2, padding = 1 },
       { icon = ' ', title = 'Recent Files', section = 'recent_files', indent = 2, padding = 1 },
       { icon = ' ', title = 'Projects', section = 'projects', indent = 2, padding = 1 },
+      {
+        align = 'center',
+        text = (function()
+          local version = vim.version()
+          local parsed_version = 'v' .. version.major .. '.' .. version.minor .. '.' .. version.patch
+          local datetime = os.date('%Y/%m/%d %H:%M')
+          return parsed_version .. ' -- ' .. datetime
+        end)(),
+      },
     },
-    -- sections = {
-    --   {
-    --     -- section = 'terminal',
-    --     -- cmd = 'chafa --passthrough tmux '
-    --     --   .. image_path
-    --     --   .. ' -f symbols -s 60x60 -c full --fg-only --symbols braille --clear',
-    --     -- height = 18,
-    --     -- padding = 1,
-    --   },
-    --   {
-    --     pane = 2,
-    --     {
-    --       section = 'keys',
-    --       gap = 2,
-    --       padding = 1,
-    --     },
-    --   },
-    -- },
   },
   lazygit = {
     enable = true,

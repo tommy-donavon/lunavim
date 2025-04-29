@@ -12,6 +12,7 @@ vim.lsp.enable {
   'lua_ls',
   'nil_ls',
   'phpactor',
+  'pyright',
   'svelte',
   'terraformls',
   'tflint',

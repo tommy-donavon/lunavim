@@ -139,6 +139,8 @@
 
                   nodejs-slim
                   typos-lsp
+                  yamlfix
+                  yaml-language-server
 
                   fd
                   freeze

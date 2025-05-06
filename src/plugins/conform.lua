@@ -19,6 +19,7 @@ return {
         svelte = { 'eslint_d', 'prettierd', 'prettier', stop_after_first = false },
         terraform = { 'terraform_fmt' },
         typescript = { 'eslint_d', 'prettierd', 'prettier', stop_after_first = false },
+        yaml = { 'yamlfix' },
       },
       notify_on_error = true,
       format_on_save = function(bufnr)

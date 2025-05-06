@@ -13,6 +13,19 @@
       "url": "https://github.com/antoinemadec/FixCursorHold.nvim/archive/1900f89dc17c603eec29960f57c00bd9ae696495.tar.gz",
       "hash": "0p7xh31qp836xvxbm1y3r4djv3r7ivxhx7jxwzgd380d029ql1hz"
     },
+    "copilot.vim": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "github",
+        "repo": "copilot.vim"
+      },
+      "branch": "release",
+      "submodules": false,
+      "revision": "18f485d892b56b311fd752039d6977333ebc2a0f",
+      "url": "https://github.com/github/copilot.vim/archive/18f485d892b56b311fd752039d6977333ebc2a0f.tar.gz",
+      "hash": "10fkrriwyn274pbig1wq41pj0mvg212sxi04wmw2frr96xv2csbm"
+    },
     "everforest-nvim": {
       "type": "Git",
       "repository": {

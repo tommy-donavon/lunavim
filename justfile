@@ -5,15 +5,15 @@ default:
 # analyze yue code
 [group('dev')]
 check:
-    @luacheck --globals vim -- src
-    @tokei src
+    @luacheck --globals vim -- nvim
+    @tokei nvim
 
 # lint lua code
 [group('dev')]
 lint:
-    @stylua src -c
+    @stylua nvim -c
 
 # lint and apply possible fixes to lua code
 [group('dev')]
 lint-fix:
-    @stylua src
+    @stylua nvim

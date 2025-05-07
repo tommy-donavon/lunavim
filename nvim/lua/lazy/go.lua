@@ -13,7 +13,9 @@ return {
     vim.api.nvim_create_autocmd('BufWritePre', {
       pattern = '*.go',
       callback = function()
+        ---@diagnostic disable-next-line: missing-parameter
         local params = vim.lsp.util.make_range_params()
+        ---@diagnostic disable-next-line: inject-field
         params.context = { only = { 'source.organizeImports' } }
         local result = vim.lsp.buf_request_sync(0, 'textDocument/codeAction', params)
         for cid, res in pairs(result or {}) do

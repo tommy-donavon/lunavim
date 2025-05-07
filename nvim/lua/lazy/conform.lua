@@ -1,5 +1,5 @@
 return {
-  'conform',
+  'conform.nvim',
   event = { 'BufWritePre' },
   cmd = { 'ConformInfo' },
   after = function()

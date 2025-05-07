@@ -14,7 +14,8 @@ jobs:
       - name: luacheck
         uses: lunarmodules/luacheck@v1
         with:
-          args: --globals vim -- src
+          args: --globals vim -- nvim
+
   lint:
     runs-on: ubuntu-latest
     steps:
@@ -24,4 +25,4 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           version: 2.0.2
-          args: --check src
+          args: --check nvim

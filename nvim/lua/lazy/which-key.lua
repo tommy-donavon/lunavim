@@ -1,6 +1,6 @@
 return {
   'which-key.nvim',
-  event = 'VimEnter',
+  event = { 'VimEnter' },
   after = function()
     local wk = require('which-key')
     return wk.setup {

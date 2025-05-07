@@ -15,6 +15,7 @@ jobs:
         uses: lunarmodules/luacheck@v1
         with:
           args: --globals vim -- nvim
+
   lint:
     runs-on: ubuntu-latest
     steps:

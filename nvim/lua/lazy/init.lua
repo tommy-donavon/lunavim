@@ -16,8 +16,9 @@ return {
   {
     'nvim-autopairs',
     event = { 'InsertEnter' },
-    config = true,
-    opts = {},
+    after = function()
+      require('nvim-autopairs').setup {}
+    end,
   },
   {
     'nvim-lspconfig',

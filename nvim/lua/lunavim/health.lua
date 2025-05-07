@@ -13,9 +13,9 @@ M.check = function()
   vim.health.start('lunavim report')
 
   if M.loaded then
-    vim.health.ok('meatvim loaded correctly')
+    vim.health.ok('lunavim loaded correctly')
   else
-    vim.health.error('meatvim did not load correctly')
+    vim.health.error('lunavim did not load correctly')
   end
 
   for idx = 1, #deps do

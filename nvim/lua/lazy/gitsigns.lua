@@ -1,3 +1,6 @@
+return {
+  'gitsigns.nvim',
+  after = function()
 local gitsigns = require('gitsigns')
 local cfg = {
   signs = {
@@ -143,9 +146,6 @@ local cfg = {
   end,
 }
 
-return {
-  'gitsigns.nvim',
-  after = function()
     gitsigns.setup(cfg)
   end,
 }

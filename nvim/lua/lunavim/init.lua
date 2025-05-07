@@ -8,12 +8,5 @@ end
 require('lunavim.settings')
 require('lunavim.keymaps')
 require('lunavim.ft')
--- require('lz.n').load('lunavim.plugins')
-
--- require('nvim-autopairs').setup()
--- require('inlay-hints').setup()
--- vim.notify = require('notify')
-
 require('lunavim.lsp')
-
 require('lunavim.health').loaded = true

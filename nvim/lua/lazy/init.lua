@@ -1,21 +1,26 @@
 return {
   {
-    'simrat39/inlay-hints.nvim',
+    'inlay-hints.nvim',
+    event = { 'VimEnter' },
     after = function()
-      require('inlay-hints.nvim').setup {}
+      require('inlay-hints').setup {}
     end,
   },
   {
-    'rcarriga/nvim-notify',
+    'nvim-notify',
     lazy = false,
     after = function()
       vim.notify = require('notify')
     end,
   },
   {
-    'windwp/nvim-autopairs',
+    'nvim-autopairs',
     event = { 'InsertEnter' },
     config = true,
     opts = {},
+  },
+  {
+    'nvim-lspconfig',
+    event = { 'VimEnter' },
   },
 }

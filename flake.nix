@@ -35,6 +35,7 @@
         { pkgs, system, ... }:
         {
           default = pkgs.mkShell {
+            name = "luna-dev";
             packages = with pkgs; [
               nil
               self.formatter.${system}

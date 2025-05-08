@@ -14,6 +14,7 @@
   ];
 
   initLua = ''
+    vim.loader.enable(true)
     require('lunavim')
     require('lz.n').load('lazy')
   '';

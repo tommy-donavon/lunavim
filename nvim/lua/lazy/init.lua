@@ -24,4 +24,7 @@ return {
     'nvim-lspconfig',
     event = { 'VimEnter' },
   },
+  {
+    'copilot.vim',
+  },
 }

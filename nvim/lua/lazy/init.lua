@@ -27,4 +27,8 @@ return {
   {
     'copilot.vim',
   },
+  {
+    'plenary.nvim',
+    event = { 'VimEnter' },
+  },
 }

@@ -1,5 +1,21 @@
 {
   "pins": {
+    "CopilotChat.nvim": {
+      "type": "GitRelease",
+      "repository": {
+        "type": "GitHub",
+        "owner": "CopilotC-Nvim",
+        "repo": "CopilotChat.nvim"
+      },
+      "pre_releases": false,
+      "version_upper_bound": null,
+      "release_prefix": null,
+      "submodules": false,
+      "version": "v3.12.0",
+      "revision": "eddc9a98930cda0b3819cc1d93427b402697dfab",
+      "url": "https://api.github.com/repos/CopilotC-Nvim/CopilotChat.nvim/tarball/v3.12.0",
+      "hash": "1ba6bi82dqpk06bkfcidc3f54wy5hwsk6anh8jdcckqwp1v1ir4z"
+    },
     "FixCursorHold.nvim": {
       "type": "Git",
       "repository": {
@@ -132,6 +148,19 @@
       "revision": "b70b900fba6e3255a5a8113c76f213102564cb0d",
       "url": "https://github.com/neovim/nvim-lspconfig/archive/b70b900fba6e3255a5a8113c76f213102564cb0d.tar.gz",
       "hash": "1yb4iasry288r74wingvfyckz8cph6bf9xvvdxzlacrss142bx61"
+    },
+    "plenary.nvim": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nvim-lua",
+        "repo": "plenary.nvim"
+      },
+      "branch": "master",
+      "submodules": false,
+      "revision": "857c5ac632080dba10aae49dba902ce3abf91b35",
+      "url": "https://github.com/nvim-lua/plenary.nvim/archive/857c5ac632080dba10aae49dba902ce3abf91b35.tar.gz",
+      "hash": "0jxx9nfga7z87v78cifglqs8w4mrpf99wcp483kb0hbv6537jmgh"
     },
     "smear-cursor.nvim": {
       "type": "GitRelease",

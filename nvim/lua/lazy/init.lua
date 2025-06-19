@@ -28,6 +28,9 @@ return {
     'copilot.vim',
   },
   {
+    'volt',
+  },
+  {
     'plenary.nvim',
     event = { 'VimEnter' },
   },

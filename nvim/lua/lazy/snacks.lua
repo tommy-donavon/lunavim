@@ -99,7 +99,7 @@ local cfg = {
   picker = {
     sources = {
       files = {
-        hidden = true,
+        hidden = false,
         ignored = false,
       },
     },
@@ -246,11 +246,6 @@ return {
       },
       {
         mode = { 'n', 'v' },
-        {
-          '<leader>tt',
-          snacks.terminal.toggle,
-          desc = '[t]oggle [t]erminal',
-        },
         {
           '<leader>tf',
           picker.explorer,

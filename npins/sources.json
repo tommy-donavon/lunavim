@@ -55,6 +55,19 @@
       "url": "https://github.com/neanias/everforest-nvim/archive/76cd62618afd415215e5bcdd7d2667c0323669bb.tar.gz",
       "hash": "09a8c6ci7yz1b9vrj1awzw3ffbs3rchql6syynl73saw2732hr3f"
     },
+    "floaterm": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nvzone",
+        "repo": "floaterm"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "402a9da67bf238350160d8358db5e483587043d6",
+      "url": "https://github.com/nvzone/floaterm/archive/402a9da67bf238350160d8358db5e483587043d6.tar.gz",
+      "hash": "1ghkh4lcx62dwz4xnwidrp7h6zk27ydwi87g9ggi7jdfvn6gl5q9"
+    },
     "freeze.nvim": {
       "type": "Git",
       "repository": {
@@ -149,6 +162,19 @@
       "url": "https://github.com/neovim/nvim-lspconfig/archive/b70b900fba6e3255a5a8113c76f213102564cb0d.tar.gz",
       "hash": "1yb4iasry288r74wingvfyckz8cph6bf9xvvdxzlacrss142bx61"
     },
+    "nvim-tundra": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "tommy-donavon",
+        "repo": "nvim-tundra"
+      },
+      "branch": "snacks-picker",
+      "submodules": false,
+      "revision": "b8ea1f38eafa6a6f5be6cb1fd272d735201114ee",
+      "url": "https://github.com/tommy-donavon/nvim-tundra/archive/b8ea1f38eafa6a6f5be6cb1fd272d735201114ee.tar.gz",
+      "hash": "0xcmswyv75z70bhi4j74r2w8iwv0cd8rp198nkvnw94562l0h3z3"
+    },
     "plenary.nvim": {
       "type": "Git",
       "repository": {
@@ -187,9 +213,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "3bedb1576db574af160643eea7df3b09dbe5ee9c",
-      "url": "https://github.com/nvzone/volt/archive/3bedb1576db574af160643eea7df3b09dbe5ee9c.tar.gz",
-      "hash": "0x696qsia05hfm86rwb26iajgyihhv15n3hwmz9c78k5zd92rz48"
+      "revision": "7b8c5e790120d9f08c8487dcb80692db6d2087a1",
+      "url": "https://github.com/nvzone/volt/archive/7b8c5e790120d9f08c8487dcb80692db6d2087a1.tar.gz",
+      "hash": "0ms94297mw7vzn1kwbdbfri4dfg0h352fvm0gb5a0qrn290byfmk"
     },
     "yuescript-vim": {
       "type": "Git",

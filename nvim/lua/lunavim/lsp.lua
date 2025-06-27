@@ -9,6 +9,7 @@ vim.lsp.enable {
   'gopls',
   'graphql',
   'hls',
+  'jsonnet_ls',
   'lua_ls',
   'nil_ls',
   'phpactor',

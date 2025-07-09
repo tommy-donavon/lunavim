@@ -5,7 +5,7 @@ local default_indent = 4
 vim.loader.enable()
 vim.g.mapleader = ' '
 
-vim.diagnostic.config { virtual_text = true }
+vim.diagnostic.config { virtual_text = false, virtual_lines = { current_line = true } }
 
 vim.api.nvim_create_autocmd('TextYankPost', {
   pattern = '*',

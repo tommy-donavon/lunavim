@@ -110,19 +110,6 @@
       "url": "https://api.github.com/repos/lewis6991/impatient.nvim/tarball/v0.2",
       "hash": "10nlz4hq1bqjsnj9pkadi3xjj74wn36f2vr66hqp7wm2z7i5zbq3"
     },
-    "inlay-hints.nvim": {
-      "type": "Git",
-      "repository": {
-        "type": "GitHub",
-        "owner": "simrat39",
-        "repo": "inlay-hints.nvim"
-      },
-      "branch": "main",
-      "submodules": false,
-      "revision": "006b0898f5d3874e8e528352103733142e705834",
-      "url": "https://github.com/simrat39/inlay-hints.nvim/archive/006b0898f5d3874e8e528352103733142e705834.tar.gz",
-      "hash": "111h7zxf6hrsx7253r010rnandqvs7zg2qccarwi6dkyqg9v2dbh"
-    },
     "menu": {
       "type": "Git",
       "repository": {

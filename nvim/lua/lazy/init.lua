@@ -23,6 +23,7 @@ return {
   {
     'volt',
   },
+  { 'nvim-web-devicons' },
   {
     'plenary.nvim',
     event = { 'VimEnter' },

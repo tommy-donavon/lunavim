@@ -5,6 +5,8 @@
     mnw.url = "github:gerg-l/mnw";
     blink.url = "github:Saghen/blink.cmp";
     systems.url = "github:nix-systems/default";
+    mcphub-nvim.url = "github:ravitemer/mcphub.nvim";
+    mcp-hub.url = "github:ravitemer/mcp-hub";
   };
 
   outputs =

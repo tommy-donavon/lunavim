@@ -1,20 +1,17 @@
 {
   "pins": {
     "CopilotChat.nvim": {
-      "type": "GitRelease",
+      "type": "Git",
       "repository": {
         "type": "GitHub",
-        "owner": "CopilotC-Nvim",
+        "owner": "deathbeam",
         "repo": "CopilotChat.nvim"
       },
-      "pre_releases": false,
-      "version_upper_bound": null,
-      "release_prefix": null,
+      "branch": "tools",
       "submodules": false,
-      "version": "v3.12.0",
-      "revision": "eddc9a98930cda0b3819cc1d93427b402697dfab",
-      "url": "https://api.github.com/repos/CopilotC-Nvim/CopilotChat.nvim/tarball/v3.12.0",
-      "hash": "1ba6bi82dqpk06bkfcidc3f54wy5hwsk6anh8jdcckqwp1v1ir4z"
+      "revision": "873e772d958f2b692e652e525ccbadcafd9799a0",
+      "url": "https://github.com/deathbeam/CopilotChat.nvim/archive/873e772d958f2b692e652e525ccbadcafd9799a0.tar.gz",
+      "hash": "0mil001sh9ifjc51n15w5pv153zfp4jdkgyr585pvwb0ykka5dcd"
     },
     "FixCursorHold.nvim": {
       "type": "Git",

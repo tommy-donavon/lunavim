@@ -16,6 +16,9 @@
   initLua = ''
     vim.loader.enable(true)
     require('lunavim')
+    require("mcphub").setup({
+        cmd = "${inputs.mcp-hub.packages.${system}.default}/bin/mcp-hub"
+    })
     require('lz.n').load('lazy')
   '';
 
@@ -47,6 +50,7 @@
       rustaceanvim
       which-key-nvim
       snacks-nvim
+      inputs.mcphub-nvim.packages."${system}".default
     ];
 
     # plugins we want to lazy load

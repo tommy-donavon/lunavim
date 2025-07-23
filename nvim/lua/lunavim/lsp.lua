@@ -20,6 +20,7 @@ vim.lsp.enable {
   'phpactor',
   'pyright',
   'qmlls',
+  'solargraph',
   'svelte',
   'terraformls',
   'tflint',

@@ -2,11 +2,16 @@
   description = "lunavim";
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
-    mnw.url = "github:gerg-l/mnw";
+
     blink.url = "github:Saghen/blink.cmp";
-    systems.url = "github:nix-systems/default";
-    mcphub-nvim.url = "github:ravitemer/mcphub.nvim";
     mcp-hub.url = "github:ravitemer/mcp-hub";
+    mcphub-nvim.url = "github:ravitemer/mcphub.nvim";
+    mnw.url = "github:gerg-l/mnw";
+    systems.url = "github:nix-systems/default";
+    treefmt-nix = {
+      url = "github:numtide/treefmt-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -17,7 +22,7 @@
       ...
     }:
     let
-      forEachSupportedSystem =
+      eachSystem =
         f:
         nixpkgs.lib.genAttrs (import systems) (
           system:
@@ -26,31 +31,55 @@
               inherit system;
             };
           in
-          f {
-            inherit pkgs system;
-          }
+          f { inherit pkgs system; }
         );
+      treefmtEval = eachSystem (
+        { pkgs, ... }:
+        inputs.treefmt-nix.lib.evalModule pkgs {
+          projectRootFile = "flake.nix";
+          programs = {
+            taplo.enable = true;
+            just.enable = true;
+
+            deadnix.enable = true;
+            statix.enable = true;
+
+            stylua.enable = true;
+            nixfmt = {
+              enable = true;
+              package = pkgs.nixfmt-rfc-style;
+            };
+          };
+
+        }
+      );
     in
     {
-      formatter = forEachSupportedSystem ({ pkgs, ... }: pkgs.nixfmt-rfc-style);
-      devShells = forEachSupportedSystem (
+      formatter = eachSystem ({ system, ... }: treefmtEval.${system}.config.build.wrapper);
+      checks = eachSystem (
+        { system, ... }:
+        {
+          formatting = treefmtEval.${system}.config.build.check self;
+        }
+      );
+      devShells = eachSystem (
         { pkgs, system, ... }:
         {
           default = pkgs.mkShell {
             name = "luna-dev";
             packages = with pkgs; [
               nil
-              self.formatter.${system}
 
               cocogitto
               just
               npins
-              tokei
 
               lua
               lua-language-server
               lua53Packages.luacheck
-              stylua
+
+              ruby_3_4
+              rubyPackages_3_4.solargraph
             ];
 
             shellHook = ''
@@ -59,7 +88,7 @@
           };
         }
       );
-      packages = forEachSupportedSystem (
+      packages = eachSystem (
         { pkgs, system, ... }:
         rec {
           dev = default.devMode;
@@ -67,7 +96,7 @@
         }
       );
       overlays = {
-        default = final: prev: {
+        default = _final: prev: {
           lunavim = self.packages.${prev.system}.default;
         };
       };

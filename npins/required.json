@@ -26,6 +26,19 @@
       "url": "https://github.com/antoinemadec/FixCursorHold.nvim/archive/1900f89dc17c603eec29960f57c00bd9ae696495.tar.gz",
       "hash": "0p7xh31qp836xvxbm1y3r4djv3r7ivxhx7jxwzgd380d029ql1hz"
     },
+    "actions-preview.nvim": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "aznhe21",
+        "repo": "actions-preview.nvim"
+      },
+      "branch": "master",
+      "submodules": false,
+      "revision": "36513ad213855d497b7dd3391a24d1d75d58e36f",
+      "url": "https://github.com/aznhe21/actions-preview.nvim/archive/36513ad213855d497b7dd3391a24d1d75d58e36f.tar.gz",
+      "hash": "1fri1rd3fsgqb232bh7wdv8nbx40dszrdxjyqjpw6hb0xsbg025d"
+    },
     "copilot.vim": {
       "type": "Git",
       "repository": {

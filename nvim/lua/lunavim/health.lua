@@ -2,10 +2,10 @@ local M = {}
 M.loaded = false
 
 local deps = {
-  'magick',
   'fd',
   'freeze',
   'lazygit',
+  'magick',
   'rg',
 }
 

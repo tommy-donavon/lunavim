@@ -1,6 +1,4 @@
-branch_whitelist = [
-    "main"
-]
+branch_whitelist = ["main"]
 skip_ci = "[skip-ci]"
 
 [git_hooks.commit-msg]
@@ -13,7 +11,4 @@ cog check
 [changelog]
 path = "CHANGELOG.md"
 template = "full_hash"
-authors = [
-    { username = "tommy-donavon", signature = "Tommy" }
-]
-
+authors = [{ username = "tommy-donavon", signature = "Tommy" }]

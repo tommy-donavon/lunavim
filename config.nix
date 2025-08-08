@@ -19,7 +19,10 @@
     require("mcphub").setup({
         cmd = "${inputs.mcp-hub.packages.${system}.default}/bin/mcp-hub"
     })
-    require('lz.n').load('lazy')
+    lzn = require('lz.n')
+    lzn.register_handler(require('handlers.which-key'))
+    lzn.load('lazy')
+    require('lzn-auto-require').enable()
   '';
 
   desktopEntry = false;
@@ -59,7 +62,6 @@
       [
 
         inputs.blink.packages.${system}.default
-        actions-preview-nvim
         conform-nvim
         gitsigns-nvim
         go-nvim

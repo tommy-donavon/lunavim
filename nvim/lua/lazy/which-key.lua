@@ -1,6 +1,15 @@
 return {
   'which-key.nvim',
   event = { 'VimEnter' },
+  keys = {
+    {
+      '<leader>?',
+      function()
+        require('which-key').show { global = false }
+      end,
+      desc = 'Buffer Local Keymaps (which-key)',
+    },
+  },
   after = function()
     local wk = require('which-key')
     return wk.setup {

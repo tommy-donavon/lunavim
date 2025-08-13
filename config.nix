@@ -16,12 +16,17 @@
   initLua = ''
     vim.loader.enable(true)
     require('lunavim')
-    require("mcphub").setup({
-        cmd = "${inputs.mcp-hub.packages.${system}.default}/bin/mcp-hub"
-    })
-    lzn = require('lz.n')
-    lzn.register_handler(require('handlers.which-key'))
+    local lzn = require('lz.n')
     lzn.load('lazy')
+    require("mcphub").setup({
+        cmd = "${inputs.mcp-hub.packages.${system}.default}/bin/mcp-hub",
+        copilot = {
+            enabled = true,
+            convert_tools_to_functions = true,
+            convert_resources_to_functions = true,
+            add_mcp_prefix = false
+        }
+    })
     require('lzn-auto-require').enable()
   '';
 
@@ -41,67 +46,37 @@
         impure = "${homeDir}/lunavim/nvim";
       in
       {
-        # absolute file path to hot reload on changes
         inherit impure;
         pure = ./nvim;
       };
-    # plugins we want to initialize automatically
-    start = with pkgs.vimPlugins; [
-      lz-n
-      nvim-autopairs
-      nvim-notify
-      rustaceanvim
-      which-key-nvim
-      snacks-nvim
+
+    start = [
       inputs.mcphub-nvim.packages."${system}".default
-    ];
+    ]
+    ++ inputs.mnw.lib.npinsToPlugins pkgs ./npins/required.json;
 
-    # plugins we want to lazy load
-    opt =
-      with pkgs.vimPlugins;
-      [
+    opt = [
 
-        inputs.blink.packages.${system}.default
-        conform-nvim
-        gitsigns-nvim
-        go-nvim
-        hover-nvim
-        lualine-nvim
-        markdown-preview-nvim
-        nvim-web-devicons
-        oil-nvim
-        overseer-nvim
-        outline-nvim
-        project-nvim
-        (nvim-treesitter.withPlugins (
-          _:
-          nvim-treesitter.allGrammars
-          ++ [
-            (pkgs.tree-sitter.buildGrammar {
-              language = "blade";
-              version = "0.11.0";
-              src = pkgs.fetchFromGitHub {
-                owner = "EmranMR";
-                repo = "tree-sitter-blade";
-                rev = "a9997ceb8d2e0cd902fe649a33b476d37a0d6042";
-                sha256 = "1dfc38q9j2i1lyhzl9z1hxgsa1id7bjmhbjdjnqlz82bg6qrsc9x";
+      inputs.blink.packages.${system}.default
+      (pkgs.vimPlugins.nvim-treesitter.withPlugins (
+        _:
+        pkgs.vimPlugins.nvim-treesitter.allGrammars
+        ++ [
+          (pkgs.tree-sitter.buildGrammar {
+            language = "blade";
+            version = "0.11.0";
+            src = pkgs.fetchFromGitHub {
+              owner = "EmranMR";
+              repo = "tree-sitter-blade";
+              rev = "a9997ceb8d2e0cd902fe649a33b476d37a0d6042";
+              sha256 = "1dfc38q9j2i1lyhzl9z1hxgsa1id7bjmhbjdjnqlz82bg6qrsc9x";
 
-              };
-            })
-          ]
-        ))
-      ]
-      ++ pkgs.lib.mapAttrsToList (
-        pname: pin:
-        (
-          pin
-          // {
-            inherit pname;
-            version = builtins.substring 0 8 pin.revision;
-          }
-
-        )
-      ) (pkgs.callPackages ./npins/sources.nix { });
+            };
+          })
+        ]
+      ))
+    ]
+    ++ inputs.mnw.lib.npinsToPlugins pkgs ./npins/optional.json;
   };
 
   extraBinPath = builtins.attrValues {

@@ -18,7 +18,7 @@ lint: (lint-fix "--check")
 
 # add required or optional plugins via npins
 [group('dev')]
-add-plugin vcs repo required *ref:
+add-plugin vcs required repo *ref:
     #!/usr/bin/env sh        
     vcs={{ vcs }}
     repo={{ repo }}
@@ -45,5 +45,5 @@ add-plugin vcs repo required *ref:
     # Build and execute command
     ref_param=""
     [ -n "$ref" ] && ref_param="--branch $ref"
+    echo "Adding plugin: $vcs/$owner/$repo_name (required: $required, ref: $ref)"
     npins --lock-file "npins/${lock_file}.json" add "$vcs" "$owner" "$repo_name" $ref_param
-    ```

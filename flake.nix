@@ -43,8 +43,16 @@
 
             deadnix.enable = true;
             statix.enable = true;
-
-            stylua.enable = true;
+            stylua = {
+              enable = true;
+              settings = {
+                indent_width = 2;
+                line_endings = "Unix";
+                quote_style = "AutoPreferSingle";
+                call_parentheses = "NoSingleTable";
+                sort_requires.enabled = true;
+              };
+            };
             nixfmt = {
               enable = true;
               package = pkgs.nixfmt-rfc-style;
@@ -63,7 +71,7 @@
         }
       );
       devShells = eachSystem (
-        { pkgs, system, ... }:
+        { pkgs, ... }:
         {
           default = pkgs.mkShell {
             name = "luna-dev";
@@ -77,9 +85,6 @@
               lua
               lua-language-server
               lua53Packages.luacheck
-
-              ruby_3_4
-              rubyPackages_3_4.solargraph
             ];
 
             shellHook = ''

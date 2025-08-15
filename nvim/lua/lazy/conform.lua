@@ -20,7 +20,7 @@ return {
 					stop_after_first = true,
 				},
 				json = { 'prettierd', 'prettier', stop_after_first = false },
-				lua = { 'stylua' },
+				lua = { 'treefmt', 'stylua' },
 				nix = { 'nixfmt' },
 				python = { 'black', stop_after_first = true },
 				ruby = { 'rubocop', 'solargraph' },

@@ -71,7 +71,7 @@
         }
       );
       devShells = eachSystem (
-        { pkgs, ... }:
+        { pkgs, system, ... }:
         {
           default = pkgs.mkShell {
             name = "luna-dev";
@@ -85,6 +85,7 @@
               lua
               lua-language-server
               lua53Packages.luacheck
+              treefmtEval.${system}.config.build.wrapper
             ];
 
             shellHook = ''

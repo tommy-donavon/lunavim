@@ -14,20 +14,17 @@
       "hash": "1fri1rd3fsgqb232bh7wdv8nbx40dszrdxjyqjpw6hb0xsbg025d"
     },
     "conform.nvim": {
-      "type": "GitRelease",
+      "type": "Git",
       "repository": {
         "type": "GitHub",
         "owner": "stevearc",
         "repo": "conform.nvim"
       },
-      "pre_releases": false,
-      "version_upper_bound": null,
-      "release_prefix": null,
+      "branch": "master",
       "submodules": false,
-      "version": "v9.0.0",
-      "revision": "a6f5bdb78caa305496357d17e962bbc4c0b392e2",
-      "url": "https://api.github.com/repos/stevearc/conform.nvim/tarball/v9.0.0",
-      "hash": "1jkm8pbfnp2s9y70cc67pj2fa25a4jl1y4lx6y1k5i323f4lplhz"
+      "revision": "973f3cb73887d510321653044791d7937c7ec0fa",
+      "url": "https://github.com/stevearc/conform.nvim/archive/973f3cb73887d510321653044791d7937c7ec0fa.tar.gz",
+      "hash": "1yx6chdrkvwalgp8641ljdxhlcfww6l5c3z374fadb3lm3mvcvkf"
     },
     "copilot.vim": {
       "type": "Git",
@@ -141,6 +138,22 @@
       "revision": "969f2c5c90457612c09cf2a13fee1adaa986d350",
       "url": "https://api.github.com/repos/lewis6991/impatient.nvim/tarball/v0.2",
       "hash": "10nlz4hq1bqjsnj9pkadi3xjj74wn36f2vr66hqp7wm2z7i5zbq3"
+    },
+    "lazydev.nvim": {
+      "type": "GitRelease",
+      "repository": {
+        "type": "GitHub",
+        "owner": "folke",
+        "repo": "lazydev.nvim"
+      },
+      "pre_releases": false,
+      "version_upper_bound": null,
+      "release_prefix": null,
+      "submodules": false,
+      "version": "v1.9.0",
+      "revision": "f59bd14a852ca43db38e3662395354cb2a9b13e0",
+      "url": "https://api.github.com/repos/folke/lazydev.nvim/tarball/v1.9.0",
+      "hash": "102sxfdq6ajvfs95r4084xvbcjv2qiv5cmyrqbwijmc05isg9d8j"
     },
     "lualine.nvim": {
       "type": "Git",

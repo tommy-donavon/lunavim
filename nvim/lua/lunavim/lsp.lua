@@ -6,6 +6,10 @@ vim.lsp.config('biome', {
 	root_markers = { 'biome.json' },
 })
 
+vim.lsp.config('jsonnet_ls', {
+	cmd = { 'jsonnet-language-server', '--tanka' },
+})
+
 vim.lsp.enable {
 	'astro',
 	'elixirls',

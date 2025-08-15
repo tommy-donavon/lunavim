@@ -1,3 +1,4 @@
+---@type vim.lsp.Config
 return {
-    cmd = { 'json-languageserver', '--tanka' },
+	cmd = { 'jsonnet-language-server', '--tanka', '--lint' },
 }

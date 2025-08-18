@@ -12,11 +12,11 @@ vim.lsp.config('jsonnet_ls', {
 
 vim.lsp.enable {
 	'astro',
+	'biome',
 	'elixirls',
 	'golangci_lint_ls',
 	'gopls',
 	'graphql',
-	'biome',
 	'hls',
 	'jsonnet_ls',
 	'lua_ls',
@@ -26,6 +26,7 @@ vim.lsp.enable {
 	'qmlls',
 	'solargraph',
 	'svelte',
+	'kotlin_lsp',
 	'terraformls',
 	'tflint',
 	'ts_ls',

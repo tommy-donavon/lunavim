@@ -27,6 +27,7 @@ vim.lsp.enable {
 	'solargraph',
 	'svelte',
 	'kotlin_lsp',
+	'kotlin_language_server',
 	'terraformls',
 	'tflint',
 	'ts_ls',

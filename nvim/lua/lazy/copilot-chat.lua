@@ -22,11 +22,13 @@ return {
 	lazy = false,
 	after = function()
 		local chat = require('CopilotChat')
-
-		chat.setup {
-			question_header = '## User ',
-			answer_header = '## Copilot ',
-			error_header = '## Error ',
+		---@type CopilotChat.config.Config
+		local chat_opts = {
+			headers = {
+				question_header = '## User ',
+				answer_header = '## Copilot ',
+				error_header = '## Error ',
+			},
 			prompts = prompts,
 			model = 'claude-3.7-sonnet',
 			mappings = {
@@ -61,6 +63,7 @@ return {
 				},
 			},
 		}
+		chat.setup(chat_opts)
 		local select = require('CopilotChat.select')
 		vim.api.nvim_create_user_command('CopilotChatVisual', function(args)
 			chat.ask(args.args, { selection = select.visual })

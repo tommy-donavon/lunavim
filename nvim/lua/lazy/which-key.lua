@@ -27,6 +27,10 @@ return {
 					group = '[d]ocument',
 				},
 				{
+					'<leader>a',
+					group = '[a]i',
+				},
+				{
 					'<leader>r',
 					group = '[r]ename',
 				},

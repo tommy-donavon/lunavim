@@ -1,12 +1,8 @@
---- only enable plugin if go is present in the environment
-if vim.fn.executable('go') ~= 1 then
-	return {}
-end
-
 return {
 	'go.nvim',
 	event = { 'CmdlineEnter' },
 	ft = { 'go', 'gomod' },
+	enabled = vim.fn.executable('go') == 1,
 	after = function()
 		require('go').setup {}
 

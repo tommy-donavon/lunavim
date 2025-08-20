@@ -2,6 +2,7 @@ local M = {}
 M.loaded = false
 
 local deps = {
+	'curl',
 	'fd',
 	'freeze',
 	'lazygit',

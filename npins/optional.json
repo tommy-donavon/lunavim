@@ -39,19 +39,6 @@
       "url": "https://github.com/github/copilot.vim/archive/18f485d892b56b311fd752039d6977333ebc2a0f.tar.gz",
       "hash": "10fkrriwyn274pbig1wq41pj0mvg212sxi04wmw2frr96xv2csbm"
     },
-    "floaterm": {
-      "type": "Git",
-      "repository": {
-        "type": "GitHub",
-        "owner": "nvzone",
-        "repo": "floaterm"
-      },
-      "branch": "main",
-      "submodules": false,
-      "revision": "402a9da67bf238350160d8358db5e483587043d6",
-      "url": "https://github.com/nvzone/floaterm/archive/402a9da67bf238350160d8358db5e483587043d6.tar.gz",
-      "hash": "1ghkh4lcx62dwz4xnwidrp7h6zk27ydwi87g9ggi7jdfvn6gl5q9"
-    },
     "freeze.nvim": {
       "type": "Git",
       "repository": {
@@ -181,32 +168,6 @@
       "url": "https://github.com/iamcco/markdown-preview.nvim/archive/a923f5fc5ba36a3b17e289dc35dc17f66d0548ee.tar.gz",
       "hash": "06187wxcj2ramhimkrgwq1q8fnndzdywljc606n3pr11y8dxs5ac"
     },
-    "menu": {
-      "type": "Git",
-      "repository": {
-        "type": "GitHub",
-        "owner": "nvzone",
-        "repo": "menu"
-      },
-      "branch": "main",
-      "submodules": false,
-      "revision": "7769b17c2a131108c02b10e9f844e504aa605cc2",
-      "url": "https://github.com/nvzone/menu/archive/7769b17c2a131108c02b10e9f844e504aa605cc2.tar.gz",
-      "hash": "1g81lmhd2vb0dq4am5wbl9q152k5qg6rzyw9z4v6img1im958hal"
-    },
-    "minty": {
-      "type": "Git",
-      "repository": {
-        "type": "GitHub",
-        "owner": "nvzone",
-        "repo": "minty"
-      },
-      "branch": "main",
-      "submodules": false,
-      "revision": "6dce9f097667862537823d515a0250ce58faab05",
-      "url": "https://github.com/nvzone/minty/archive/6dce9f097667862537823d515a0250ce58faab05.tar.gz",
-      "hash": "0wkp6wjc630mh3i0xd41x5shdkyzwh7n53y7rl304smmz0bk38jk"
-    },
     "nvim-lspconfig": {
       "type": "Git",
       "repository": {
@@ -309,19 +270,6 @@
       "revision": "98a9e4679ffca5d04c6cce93e794ba706494d129",
       "url": "https://api.github.com/repos/sphamba/smear-cursor.nvim/tarball/v0.4.2",
       "hash": "109220mm7bliajwgh31x75g557jaz35d4papxgw3scjgzmnpcy9r"
-    },
-    "volt": {
-      "type": "Git",
-      "repository": {
-        "type": "GitHub",
-        "owner": "nvzone",
-        "repo": "volt"
-      },
-      "branch": "main",
-      "submodules": false,
-      "revision": "7b8c5e790120d9f08c8487dcb80692db6d2087a1",
-      "url": "https://github.com/nvzone/volt/archive/7b8c5e790120d9f08c8487dcb80692db6d2087a1.tar.gz",
-      "hash": "0ms94297mw7vzn1kwbdbfri4dfg0h352fvm0gb5a0qrn290byfmk"
     }
   },
   "version": 5

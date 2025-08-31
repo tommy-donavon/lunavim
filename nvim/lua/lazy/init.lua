@@ -20,12 +20,17 @@ return {
 	{
 		'copilot.vim',
 	},
-	{
-		'volt',
-	},
 	{ 'nvim-web-devicons' },
 	{
 		'plenary.nvim',
 		event = { 'VimEnter' },
+	},
+	{
+		'nightfox.nvim',
+		lazy = false,
+		priority = 1000,
+		after = function()
+			vim.cmd('colorscheme nightfox')
+		end,
 	},
 }

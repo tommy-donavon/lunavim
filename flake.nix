@@ -38,11 +38,12 @@
         inputs.treefmt-nix.lib.evalModule pkgs {
           projectRootFile = "flake.nix";
           programs = {
-            taplo.enable = true;
-            just.enable = true;
-
+            actionlint.enable = true;
             deadnix.enable = true;
+            just.enable = true;
             statix.enable = true;
+            taplo.enable = true;
+
             stylua = {
               enable = true;
               settings = {

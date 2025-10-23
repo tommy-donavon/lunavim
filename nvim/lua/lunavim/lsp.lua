@@ -10,6 +10,10 @@ vim.lsp.config('jsonnet_ls', {
 	cmd = { 'jsonnet-language-server', '--tanka' },
 })
 
+vim.lsp.config('elixirls', {
+	cmd = { 'elixir-ls' },
+})
+
 vim.lsp.enable {
 	'astro',
 	'biome',

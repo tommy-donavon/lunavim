@@ -33,4 +33,11 @@ return {
 			vim.cmd('colorscheme nightfox')
 		end,
 	},
+	{
+		'hardtime.nvim',
+		event = { 'BufReadPre', 'BufNewFile' },
+		after = function()
+			require('hardtime').setup()
+		end,
+	},
 }

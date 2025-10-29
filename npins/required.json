@@ -37,10 +37,10 @@
       "version_upper_bound": null,
       "release_prefix": null,
       "submodules": false,
-      "version": "v2.11.4",
-      "revision": "f93b3de8b5a336e14365985403f464e4d2ebe473",
-      "url": "https://api.github.com/repos/nvim-neorocks/lz.n/tarball/v2.11.4",
-      "hash": "0gg9zq54b86wizyr44cff5bj6mrxy54gjybha1kmvmxpyplgyi9z"
+      "version": "v2.12.2",
+      "revision": "74194977d829b0d2de9a1514060114b568f6fdba",
+      "url": "https://api.github.com/repos/nvim-neorocks/lz.n/tarball/v2.12.2",
+      "hash": "0d0szsc2k92m6ak894jym9y262i21nav0qsx2wpg72zm9sa27zv0"
     },
     "lzn-auto-require": {
       "type": "Git",
@@ -80,9 +80,9 @@
       },
       "branch": "master",
       "submodules": false,
-      "revision": "23320e75953ac82e559c610bec5a90d9c6dfa743",
-      "url": "https://github.com/windwp/nvim-autopairs/archive/23320e75953ac82e559c610bec5a90d9c6dfa743.tar.gz",
-      "hash": "12lkkyl6ink1qrpggbjfck2ab3yfj5mpa6jfgkrw451d1ycd4rz5"
+      "revision": "7a2c97cccd60abc559344042fefb1d5a85b3e33b",
+      "url": "https://github.com/windwp/nvim-autopairs/archive/7a2c97cccd60abc559344042fefb1d5a85b3e33b.tar.gz",
+      "hash": "1paswbxyhfz86y0sq2jig4mgnpi6hi0qnb9lf1rwqn5plgb204ki"
     },
     "nvim-notify": {
       "type": "GitRelease",
@@ -109,9 +109,9 @@
       },
       "branch": "master",
       "submodules": false,
-      "revision": "857c5ac632080dba10aae49dba902ce3abf91b35",
-      "url": "https://github.com/nvim-lua/plenary.nvim/archive/857c5ac632080dba10aae49dba902ce3abf91b35.tar.gz",
-      "hash": "0jxx9nfga7z87v78cifglqs8w4mrpf99wcp483kb0hbv6537jmgh"
+      "revision": "b9fd5226c2f76c951fc8ed5923d85e4de065e509",
+      "url": "https://github.com/nvim-lua/plenary.nvim/archive/b9fd5226c2f76c951fc8ed5923d85e4de065e509.tar.gz",
+      "hash": "1kg043h7dqcrqqgg8pp6hsldx7jdhlh8qwad2kkckia191xgnjgm"
     },
     "rustaceanvim": {
       "type": "GitRelease",
@@ -124,10 +124,10 @@
       "version_upper_bound": null,
       "release_prefix": null,
       "submodules": false,
-      "version": "v6.7.0",
-      "revision": "eb606eb3785f6c6e31ef675c32b706694b76923b",
-      "url": "https://api.github.com/repos/mrcjkb/rustaceanvim/tarball/v6.7.0",
-      "hash": "00hni3yyj7xvcx0swkv7dqgrpsihiwiivvgd6ir7f3kh01za6m02"
+      "version": "v6.9.6",
+      "revision": "be0d1d14b8504c1c0965b608dc7ed39f2d588c91",
+      "url": "https://api.github.com/repos/mrcjkb/rustaceanvim/tarball/v6.9.6",
+      "hash": "0n27nkjzr8hcy6yqx3zfxjrwc26imivnqlm28yxncpzvqvwivy4v"
     },
     "snacks.nvim": {
       "type": "GitRelease",
@@ -140,10 +140,10 @@
       "version_upper_bound": null,
       "release_prefix": null,
       "submodules": false,
-      "version": "v2.22.0",
-      "revision": "5eac729fa290248acfe10916d92a5ed5e5c0f9ed",
-      "url": "https://api.github.com/repos/folke/snacks.nvim/tarball/v2.22.0",
-      "hash": "1hbm4fnw51qdp0nz83fcxbvnxjq2k57a37w6dp0wz6wkcx7cwxw9"
+      "version": "v2.27.0",
+      "revision": "4b3bb54d8b8bc114ceab203fa23973789a79be24",
+      "url": "https://api.github.com/repos/folke/snacks.nvim/tarball/v2.27.0",
+      "hash": "0gwi8hwz59n1sd44w05whmm67mz9v6q0nbv45qwy0992z0l0wis2"
     },
     "which-key.nvim": {
       "type": "GitRelease",

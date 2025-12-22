@@ -22,9 +22,9 @@
       },
       "branch": "master",
       "submodules": false,
-      "revision": "9fd3d5e0b689ec1bf400c53cbbec72c6fdf24081",
-      "url": "https://github.com/stevearc/conform.nvim/archive/9fd3d5e0b689ec1bf400c53cbbec72c6fdf24081.tar.gz",
-      "hash": "1igspxqkqqv9f1fqh0sf6dlap1p8an8jl167a93v33c8ig2h6if9"
+      "revision": "328c2f1dda56f933d3337a1316e1020ba30ba6aa",
+      "url": "https://github.com/stevearc/conform.nvim/archive/328c2f1dda56f933d3337a1316e1020ba30ba6aa.tar.gz",
+      "hash": "13dg25i4rqjvc3qxa5ax6lkjayzdbj4fp6vbn3djj1r5rbvgyf4w"
     },
     "copilot.vim": {
       "type": "Git",
@@ -35,9 +35,9 @@
       },
       "branch": "release",
       "submodules": false,
-      "revision": "da369d90cfd6c396b1d0ec259836a1c7222fb2ea",
-      "url": "https://github.com/github/copilot.vim/archive/da369d90cfd6c396b1d0ec259836a1c7222fb2ea.tar.gz",
-      "hash": "0pwaw4izic1zajx586vxjn8yslabd2hq42wy1i7px3fj6g2v5gvl"
+      "revision": "f89e977c87180519ba3b942200e3d05b17b1e2fc",
+      "url": "https://github.com/github/copilot.vim/archive/f89e977c87180519ba3b942200e3d05b17b1e2fc.tar.gz",
+      "hash": "0894mjyjjqgb9x1yyhshl8vj85lyxmv4jc8caxpi2brmaqsc83in"
     },
     "freeze.nvim": {
       "type": "Git",
@@ -122,9 +122,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "3b49066e09e03e63be6d6f43ae2b8bcd58301f63",
-      "url": "https://github.com/lewis6991/hover.nvim/archive/3b49066e09e03e63be6d6f43ae2b8bcd58301f63.tar.gz",
-      "hash": "0y6lprbl4aw07fa3cg6rvbfabbw816d7lc75jdclfz558p2k19mc"
+      "revision": "e61604205336d4461d2f910ecbb9f2ddc0b947a0",
+      "url": "https://github.com/lewis6991/hover.nvim/archive/e61604205336d4461d2f910ecbb9f2ddc0b947a0.tar.gz",
+      "hash": "1bj31n5pcnsv2vjpx1z7fi6sizvs84gzqqmqw0shvqg3z0bp7c2f"
     },
     "impatient.nvim": {
       "type": "GitRelease",
@@ -167,9 +167,9 @@
       },
       "branch": "master",
       "submodules": false,
-      "revision": "3946f0122255bc377d14a59b27b609fb3ab25768",
-      "url": "https://github.com/nvim-lualine/lualine.nvim/archive/3946f0122255bc377d14a59b27b609fb3ab25768.tar.gz",
-      "hash": "0mrk9959yn5hwsf1nayd149f18yfcbf6nfplg806n2z1dmsc1nl5"
+      "revision": "47f91c416daef12db467145e16bed5bbfe00add8",
+      "url": "https://github.com/nvim-lualine/lualine.nvim/archive/47f91c416daef12db467145e16bed5bbfe00add8.tar.gz",
+      "hash": "1q34vy3rcwv4nz1b2n2hvp2yxs8clczzvyf3mpvcir8bxcgxk4is"
     },
     "markdown-preview.nvim": {
       "type": "Git",
@@ -209,9 +209,9 @@
       },
       "branch": "master",
       "submodules": false,
-      "revision": "64e0a1c6ba39417ee81a893ebbb4f8e4a949445c",
-      "url": "https://github.com/neovim/nvim-lspconfig/archive/64e0a1c6ba39417ee81a893ebbb4f8e4a949445c.tar.gz",
-      "hash": "16llbw57n9r60wk8ggk451av66b9d0v2hng3lkcprz1l1wrfq81n"
+      "revision": "c4f67bf85b01a57e3c130352c0a0e453ab8cd5b9",
+      "url": "https://github.com/neovim/nvim-lspconfig/archive/c4f67bf85b01a57e3c130352c0a0e453ab8cd5b9.tar.gz",
+      "hash": "1p55r7cw2f4ja2lvl1ya0m30faaqdwly6w63p7hxdp7n9fxg3sxz"
     },
     "nvim-web-devicons": {
       "type": "Git",
@@ -269,10 +269,10 @@
       "version_upper_bound": null,
       "release_prefix": null,
       "submodules": false,
-      "version": "v1.6.0",
-      "revision": "2c23513a4fd3a3be0459b3b62996fb0732c2fd7e",
-      "url": "https://api.github.com/repos/stevearc/overseer.nvim/tarball/v1.6.0",
-      "hash": "0j6z7wzs5wxakfnqwc65wsiyqqx97ashda368rx13y4g5blh2wvx"
+      "version": "v2.0.0",
+      "revision": "2fe35c4282c35179fb615acbf52881f22924e7ad",
+      "url": "https://api.github.com/repos/stevearc/overseer.nvim/tarball/v2.0.0",
+      "hash": "1ykxqa575h56ahiir153nwqnzg5ql9aq3f9dhaq2c3753n2s2i4x"
     },
     "project.nvim": {
       "type": "Git",
@@ -298,10 +298,10 @@
       "version_upper_bound": null,
       "release_prefix": null,
       "submodules": false,
-      "version": "v0.5.1",
-      "revision": "58e69a911e7f5296b3d7fec5e7414df5a4ac91fb",
-      "url": "https://api.github.com/repos/sphamba/smear-cursor.nvim/tarball/v0.5.1",
-      "hash": "1n4y5ff4qrmnp1fx886japf3g8bv28hca2hv19v65yndkgsb8wx1"
+      "version": "v0.6.0",
+      "revision": "c85bdbb25db096fbcf616bc4e1357bd61fe2c199",
+      "url": "https://api.github.com/repos/sphamba/smear-cursor.nvim/tarball/v0.6.0",
+      "hash": "1fsd7wz7bls623a60ia0j1ssw6wi4vrf9xzq41zl3m6540bgsgjk"
     }
   },
   "version": 5

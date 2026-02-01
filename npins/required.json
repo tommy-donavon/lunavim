@@ -145,6 +145,19 @@
       "url": "https://api.github.com/repos/folke/snacks.nvim/tarball/v2.30.0",
       "hash": "0ri4ymm9w3ylawc7dbd7p872697snkwkks5rpwyk239sywdbjvp6"
     },
+    "teide.nvim": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "serhez",
+        "repo": "teide.nvim"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "95041d1d78e786bd88be64bca3e1771f7b6236df",
+      "url": "https://github.com/serhez/teide.nvim/archive/95041d1d78e786bd88be64bca3e1771f7b6236df.tar.gz",
+      "hash": "0q0c26f4ml09pp4g0a8lrgwv5k6gpfknmzk119dvhiz6x8fpxfps"
+    },
     "which-key.nvim": {
       "type": "GitRelease",
       "repository": {

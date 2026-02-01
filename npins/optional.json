@@ -13,6 +13,19 @@
       "url": "https://github.com/aznhe21/actions-preview.nvim/archive/cb938c25edaac38d362555f19244a9cb85d561e8.tar.gz",
       "hash": "0752pdwksbpvkb3x1hyl1dhflb7a48skxd0qb3gylykigh2rciv1"
     },
+    "bento.nvim": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "serhez",
+        "repo": "bento.nvim"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "aee8a542bc1839ff1764992ef2aa41c981d0bba4",
+      "url": "https://github.com/serhez/bento.nvim/archive/aee8a542bc1839ff1764992ef2aa41c981d0bba4.tar.gz",
+      "hash": "1bacbjdkhl9d3zqvyi37y2bk8rpsmyw1l3xjlri9203v1h9k8wz0"
+    },
     "conform.nvim": {
       "type": "Git",
       "repository": {

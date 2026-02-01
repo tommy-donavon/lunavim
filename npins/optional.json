@@ -271,22 +271,6 @@
       "url": "https://api.github.com/repos/hedyhli/outline.nvim/tarball/v1.1.0",
       "hash": "1rg907hqdgz3h87ba262jqhph3m72g5r40jy9ngnjxmk0d45bcvx"
     },
-    "overseer.nvim": {
-      "type": "GitRelease",
-      "repository": {
-        "type": "GitHub",
-        "owner": "stevearc",
-        "repo": "overseer.nvim"
-      },
-      "pre_releases": false,
-      "version_upper_bound": null,
-      "release_prefix": null,
-      "submodules": false,
-      "version": "v2.0.0",
-      "revision": "2fe35c4282c35179fb615acbf52881f22924e7ad",
-      "url": "https://api.github.com/repos/stevearc/overseer.nvim/tarball/v2.0.0",
-      "hash": "1ykxqa575h56ahiir153nwqnzg5ql9aq3f9dhaq2c3753n2s2i4x"
-    },
     "project.nvim": {
       "type": "Git",
       "repository": {
